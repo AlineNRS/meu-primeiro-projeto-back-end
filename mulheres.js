@@ -62,7 +62,7 @@ async function corrigeMulher(request,response){
 
         response.json(mulherAtualizadaNoBancoDeDados)
     } catch (error) {
-        console.log(erro)
+        console.log(error)
     }       
   }
 
@@ -72,7 +72,7 @@ async function deletaMulher(request,response) {
    await mulher.findByIdAndDelete(request.params.id)
    response.json({messagem:'Mulher deletada com sucesso!'}) 
    } catch (error) {
-    console.log(erro)
+    console.log(error)
    }
    }
 
