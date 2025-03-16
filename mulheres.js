@@ -13,13 +13,14 @@ app.use(cors())
 const porta = 3333//estou criando a porta
 
 //GET
+
 async function mostraMulheres(request, response) {
     try {
         const mulheresVindasDoBancoDeDados = await mulher.find()
 
        response.json(mulheresVindasDoBancoDeDados)
     } catch (error) {
-        console.log(erro)
+    console.log(error)
     }
    }
 
