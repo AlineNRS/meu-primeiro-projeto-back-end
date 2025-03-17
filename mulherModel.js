@@ -1,6 +1,6 @@
-const mogoose = require('mongoose')
+const mongoose = require('mongoose')
 
-const MulherSchema = new mogoose.Schema({
+const MulherSchema = new mongoose.Schema({
     nome: {
         type: String,
         required: true
@@ -19,4 +19,4 @@ const MulherSchema = new mogoose.Schema({
     }
 })
 
-module.exports = mogoose.model('diva', MulherSchema)
+module.exports = mongoose.model('diva', MulherSchema)
